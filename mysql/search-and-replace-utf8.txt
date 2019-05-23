@@ -1,0 +1,43 @@
+UPDATE wp_postmeta SET meta_value = REPLACE(meta_value, 'â€œ', '"');
+UPDATE wp_postmeta SET meta_value = REPLACE(meta_value, 'â€', '"');
+UPDATE wp_postmeta SET meta_value = REPLACE(meta_value, 'â€™', "'");
+UPDATE wp_postmeta SET meta_value = REPLACE(meta_value, 'â€˜', "'");
+UPDATE wp_postmeta SET meta_value = REPLACE(meta_value, 'â€”', '–');
+UPDATE wp_postmeta SET meta_value = REPLACE(meta_value, 'â€“', '—');
+UPDATE wp_postmeta SET meta_value = REPLACE(meta_value, 'â€¢', '-');
+UPDATE wp_postmeta SET meta_value = REPLACE(meta_value, 'â€¦', '...');
+UPDATE wp_postmeta SET meta_value = REPLACE(meta_value, 'Â', ' ');
+UPDATE wp_postmeta SET meta_value = REPLACE(meta_value, 'Ã©', 'é');
+
+UPDATE wp_posts SET post_title = REPLACE(post_title, 'â€œ', '"');
+UPDATE wp_posts SET post_title = REPLACE(post_title, 'â€', '"');
+UPDATE wp_posts SET post_title = REPLACE(post_title, 'â€™', "'");
+UPDATE wp_posts SET post_title = REPLACE(post_title, 'â€˜', "'");
+UPDATE wp_posts SET post_title = REPLACE(post_title, 'â€”', '–');
+UPDATE wp_posts SET post_title = REPLACE(post_title, 'â€“', '—');
+UPDATE wp_posts SET post_title = REPLACE(post_title, 'â€¢', '-');
+UPDATE wp_posts SET post_title = REPLACE(post_title, 'â€¦', '...');
+UPDATE wp_posts SET post_title = REPLACE(post_title, 'Â', ' ');
+UPDATE wp_posts SET post_title = REPLACE(post_title, 'Ã©', 'é');
+
+UPDATE wp_posts SET post_content = REPLACE(post_content, 'â€œ', '"');
+UPDATE wp_posts SET post_content = REPLACE(post_content, 'â€', '"');
+UPDATE wp_posts SET post_content = REPLACE(post_content, 'â€™', "'");
+UPDATE wp_posts SET post_content = REPLACE(post_content, 'â€˜', "'");
+UPDATE wp_posts SET post_content = REPLACE(post_content, 'â€”', '–');
+UPDATE wp_posts SET post_content = REPLACE(post_content, 'â€“', '—');
+UPDATE wp_posts SET post_content = REPLACE(post_content, 'â€¢', '-');
+UPDATE wp_posts SET post_content = REPLACE(post_content, 'â€¦', '...');
+UPDATE wp_posts SET post_content = REPLACE(post_content, 'Â', ' ');
+UPDATE wp_posts SET post_content = REPLACE(post_content, 'Ã©', 'é');
+
+UPDATE wp_comments SET comment_content = REPLACE(comment_content, 'â€œ', '“');
+UPDATE wp_comments SET comment_content = REPLACE(comment_content, 'â€', '”');
+UPDATE wp_comments SET comment_content = REPLACE(comment_content, 'â€™', '’');
+UPDATE wp_comments SET comment_content = REPLACE(comment_content, 'â€˜', '‘');
+UPDATE wp_comments SET comment_content = REPLACE(comment_content, 'â€”', '–');
+UPDATE wp_comments SET comment_content = REPLACE(comment_content, 'â€“', '—');
+UPDATE wp_comments SET comment_content = REPLACE(comment_content, 'â€¢', '-');
+UPDATE wp_comments SET comment_content = REPLACE(comment_content, 'â€¦', '...');
+UPDATE wp_comments SET comment_content = REPLACE(comment_content, 'Â', ' ');
+UPDATE wp_comments SET comment_content = REPLACE(comment_content, 'Ã©', 'é');
