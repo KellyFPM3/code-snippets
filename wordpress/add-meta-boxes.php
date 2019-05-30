@@ -77,5 +77,4 @@ function save_cpt_meta($post_id, $post) {
 }
 
 add_action('save_post', 'save_cpt_meta', 1, 2);
-
 ?>
